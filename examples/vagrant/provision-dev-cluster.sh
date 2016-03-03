@@ -48,7 +48,7 @@ function prepare_extras() {
     # Install thrift, needed for code generation in the scheduler build.
     # TODO(wfarner): Move deb file out of jfarrell's individual hosting.
     thrift_deb=thrift-compiler_0.9.1_amd64.deb
-    wget -c http://people.apache.org/~jfarrell/thrift/0.9.1/contrib/deb/ubuntu/12.04/$thrift_deb
+    wget -c http://dl.bintray.com/apache/thrift/debian/pool/main/t/thrift/$thrift_deb
     dpkg --install $thrift_deb
 
     # Include build script in default PATH.
